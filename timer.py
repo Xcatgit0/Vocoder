@@ -1,8 +1,9 @@
 import time
 
 input("press enter to start timer")
-start = int(time.time())
+start = float(time.time())
 input("press enter to stop timer")
-end = int(time.time())
+end = float(time.time())
 
-print("time use:", (end - start))
+result = end - start
+print("time use: {:.2f}".format(result))
